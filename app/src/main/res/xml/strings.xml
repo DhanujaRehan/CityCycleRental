@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="contact_number">Contact Number : </string>
+    <string name="email">Email : </string>
+    <string name="nic_no">NIC No : </string>
+</PreferenceScreen>

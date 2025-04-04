@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main">#2C2B34</color>
+    <color name="second">#EBEAF5</color>
+    <color name="third">#6B6E6E</color>
+    <color name="fourth">#282931</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#20B400</color>
+    <color name="yellow">#E9C804</color>
+    <color name="blue">#000065</color>
+    <color name="lightblue">#00BCD4</color>
+    <color name="widblue">#B6E8EF</color>
+    <color name="lightash">#ACABAB</color>
+    <color name="wid">#EBEAF5</color>
+    <color name="wid2">#929199</color>
+
+</resources>
+

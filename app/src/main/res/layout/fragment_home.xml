@@ -1,0 +1,1671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="126dp"
+                android:layout_height="128dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/blacklogo" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/gilbert"
+                android:text="PaddleGo"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="-40dp"/>
+        </LinearLayout>
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/headerLayout"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="200dp">
+
+
+                <TextView
+                    android:id="@+id/textView56"
+                    android:layout_width="384dp"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/blackwidget"
+                    android:paddingLeft="10dp"
+                    android:text="Make the confutable \nLuxuriou \nFast \nHealthy"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView24"
+                    android:layout_width="158dp"
+                    android:layout_height="134dp"
+                    android:layout_marginTop="-140dp"
+                    android:layout_marginEnd="-350dp"
+                    android:background="@drawable/racerq"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/widget"
+                    app:layout_constraintEnd_toStartOf="@+id/textView56"
+                    app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+                <TextView
+                    android:id="@+id/textView53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="175dp"
+                    android:layout_marginEnd="-104dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Hot Deals"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/horizontalScrollView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="175dp"
+                    android:layout_marginEnd="-404dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_extralight"
+                    android:text="view more"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/horizontalScrollView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginStart="410dp"
+                    android:layout_marginTop="180dp"
+                    android:src="@drawable/tri"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="430dp"
+                    android:layout_marginEnd="-124dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="New Arrivals"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/horizontalScrollView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView67"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="430dp"
+                    android:layout_marginEnd="-404dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_extralight"
+                    android:text="view more"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/horizontalScrollView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView30"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginStart="410dp"
+                    android:layout_marginTop="435dp"
+                    android:src="@drawable/tri"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_width="457dp"
+                    android:layout_height="229dp"
+                    android:scrollbars="none"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView53">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="horizontal"
+                        android:paddingRight="15dp">
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="213dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/widgetmain1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/imageView21"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/red" />
+
+                            <TextView
+                                android:id="@+id/textView21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="center"
+                                android:lineSpacingExtra="4dp"
+                                android:text="Red Lady"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView31"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:lineSpacingExtra="2dp"
+                                android:text="100LKR / Day"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/button21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:width="120dp"
+                                android:backgroundTint="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Rent"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="213dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/widgetmain1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/imageView1"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/white" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="center"
+                                android:lineSpacingExtra="4dp"
+                                android:text="White Ghost"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:lineSpacingExtra="2dp"
+                                android:text="250LKR / Day"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/Rent3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:width="120dp"
+                                android:backgroundTint="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Rent"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="213dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/widgetmain1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/imageView5"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/black" />
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:lineSpacingExtra="2dp"
+                                android:text="350LKR / Day"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/Rent4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:width="120dp"
+                                android:backgroundTint="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Rent"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="213dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/widgetmain1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/imageView212"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/eka" />
+
+                            <TextView
+                                android:id="@+id/textView210"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="center"
+                                android:lineSpacingExtra="4dp"
+                                android:text="White Shadow"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView310"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:lineSpacingExtra="2dp"
+                                android:text="450LKR / Day"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/Rent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:width="120dp"
+                                android:backgroundTint="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Rent"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView2"
+                    android:layout_width="453dp"
+                    android:layout_height="217dp"
+                    android:scrollbars="none"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView66">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingRight="15dp">
+
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="213dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/widget2"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/imageView40"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/paha" />
+
+                            <TextView
+                                android:id="@+id/textView41"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="center"
+                                android:lineSpacingExtra="4dp"
+                                android:text="White Lush"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView42"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:lineSpacingExtra="2dp"
+                                android:text="550LKR / Day"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/button43"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:width="120dp"
+                                android:backgroundTint="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Rent"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="213dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/widget2"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView44"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/haya" />
+
+                            <TextView
+                                android:id="@+id/textView45"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="center"
+                                android:lineSpacingExtra="4dp"
+                                android:text="Blue Sky"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView46"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:lineSpacingExtra="2dp"
+                                android:text="450LKR / Day"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/Rent47"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:width="120dp"
+                                android:backgroundTint="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Rent"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="213dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/widget2"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView48"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/hatha" />
+
+                            <TextView
+                                android:id="@+id/textView49"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="center"
+                                android:lineSpacingExtra="4dp"
+                                android:text="Greeny Forest"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView50"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:lineSpacingExtra="2dp"
+                                android:text="550LKR / Day"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/Rent51"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:width="120dp"
+                                android:backgroundTint="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Rent"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="center"
+                                android:lineSpacingExtra="4dp"
+                                android:text="Black Road"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="213dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/widget2"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView52"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/namaya" />
+
+                            <TextView
+                                android:id="@+id/textView530"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="center"
+                                android:lineSpacingExtra="4dp"
+                                android:text="Muddy Buddy"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView660"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:lineSpacingExtra="2dp"
+                                android:text="650LKR / Day"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/Rent55"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:width="120dp"
+                                android:backgroundTint="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Rent"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Rent Your Paddle"
+                    android:layout_marginTop="30dp"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView22">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/widgetmain1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/imageView80"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/eka" />
+
+                            <TextView
+                                android:id="@+id/textView81"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="center"
+                                android:lineSpacingExtra="4dp"
+                                android:text="Mistry White"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView82"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:lineSpacingExtra="2dp"
+                                android:text="750LKR / Day"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/button83"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:width="120dp"
+                                android:backgroundTint="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Rent"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="32dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/widgetmain1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/imageView84"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/deka" />
+
+                            <TextView
+                                android:id="@+id/textView85"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="center"
+                                android:lineSpacingExtra="4dp"
+                                android:text="Blue Berry"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView86"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:lineSpacingExtra="2dp"
+                                android:text="650LKR / Day"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/Rent87"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:width="120dp"
+                                android:backgroundTint="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Rent"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/widgetmain1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/imageView88"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/thuna" />
+
+                            <TextView
+                                android:id="@+id/textView89"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="center"
+                                android:lineSpacingExtra="4dp"
+                                android:text="Mud Monster"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView90"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:lineSpacingExtra="2dp"
+                                android:text="500LKR / Day"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/button91"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:width="120dp"
+                                android:backgroundTint="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Rent"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="32dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/widgetmain1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/imageView92"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/hathara" />
+
+                            <TextView
+                                android:id="@+id/textView93"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="center"
+                                android:lineSpacingExtra="4dp"
+                                android:text="Flemingo"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView94"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:lineSpacingExtra="2dp"
+                                android:text="600LKR / Day"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/Rent95"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:width="120dp"
+                                android:backgroundTint="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Rent"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/widgetmain1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/imageView100"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/paha" />
+
+                            <TextView
+                                android:id="@+id/textView101"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="center"
+                                android:lineSpacingExtra="4dp"
+                                android:text="Falcon"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView102"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:lineSpacingExtra="2dp"
+                                android:text="450LKR / Day"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/button103"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:width="120dp"
+                                android:backgroundTint="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Rent"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="32dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/widgetmain1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/imageView104"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/haya" />
+
+                            <TextView
+                                android:id="@+id/textView105"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="center"
+                                android:lineSpacingExtra="4dp"
+                                android:text="Blue Sky"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView106"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:lineSpacingExtra="2dp"
+                                android:text="550LKR / Day"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/Rent107"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:width="120dp"
+                                android:backgroundTint="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Rent"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/widgetmain1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/imageView108"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/namaya" />
+
+                            <TextView
+                                android:id="@+id/textView109"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="center"
+                                android:lineSpacingExtra="4dp"
+                                android:text="Greeny Forest"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView110"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:lineSpacingExtra="2dp"
+                                android:text="750LKR / Day"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/button111"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:width="120dp"
+                                android:backgroundTint="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Rent"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="32dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/widgetmain1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/imageView112"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ata" />
+
+                            <TextView
+                                android:id="@+id/textView113"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="center"
+                                android:lineSpacingExtra="4dp"
+                                android:text="Pink Rush"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView114"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:lineSpacingExtra="2dp"
+                                android:text="450LKR / Day"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/Rent115"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:width="120dp"
+                                android:backgroundTint="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Rent"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/widgetmain1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/imageView116"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/dahaya" />
+
+                            <TextView
+                                android:id="@+id/textView117"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="center"
+                                android:lineSpacingExtra="4dp"
+                                android:text="Smoker"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView118"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:lineSpacingExtra="2dp"
+                                android:text="850LKR / Day"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/button119"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:width="120dp"
+                                android:backgroundTint="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Rent"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="32dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/widgetmain1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/imageView120"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ekolaha" />
+
+                            <TextView
+                                android:id="@+id/textView121"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="center"
+                                android:lineSpacingExtra="4dp"
+                                android:text="Thnder"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView122"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:lineSpacingExtra="2dp"
+                                android:text="950LKR / Day"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/Rent123"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:width="120dp"
+                                android:backgroundTint="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Rent"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/widgetmain1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/imageView150"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/dahahathara" />
+
+                            <TextView
+                                android:id="@+id/textView151"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="center"
+                                android:lineSpacingExtra="4dp"
+                                android:text="Bumbble Bee"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView152"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:lineSpacingExtra="2dp"
+                                android:text="1000LKR / Day"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/button153"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:width="120dp"
+                                android:backgroundTint="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Rent"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="32dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/widgetmain1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/imageView154"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/dahathuna" />
+
+                            <TextView
+                                android:id="@+id/textView155"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="center"
+                                android:lineSpacingExtra="4dp"
+                                android:text="Sun Shine"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView156"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:lineSpacingExtra="2dp"
+                                android:text="450LKR / Day"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/Rent157"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:width="120dp"
+                                android:backgroundTint="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Rent"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/textView40"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="160dp"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Comming Up"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="35dp"
+                            android:alpha="0.5"
+                            android:background="@drawable/poster"
+                            android:orientation="horizontal">
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView52"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-190dp"
+                            android:layout_marginRight="40dp"
+                            android:fontFamily="@font/poppins_black"
+                            android:gravity="end"
+                            android:text="Time To\nGive Your\nLegs A Rest"
+                            android:textColor="@color/blue"
+                            android:textSize="40dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView18"
+                            android:layout_width="250dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_marginTop="-190dp"
+
+                            android:layout_weight="1"
+                            android:alpha="1"
+                            android:src="@drawable/bucketposter" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/widgetmain1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:id="@+id/imageView250"
+                                    android:layout_width="150dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginTop="0dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/bucketone" />
+
+                                <TextView
+                                    android:id="@+id/textView251"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:gravity="center"
+                                    android:lineSpacingExtra="4dp"
+                                    android:text="Green Bucket"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/textView252"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="-5dp"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:gravity="center"
+                                    android:lineSpacingExtra="2dp"
+                                    android:text="Comming Up"
+                                    android:textColor="@color/third"
+                                    android:textSize="18sp" />
+
+                                <Button
+                                    android:id="@+id/button253"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:width="120dp"
+                                    android:backgroundTint="@color/black"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="Rent"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginRight="32dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/widgetmain1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:id="@+id/imageView254"
+                                    android:layout_width="150dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginTop="0dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/buckettwo" />
+
+                                <TextView
+                                    android:id="@+id/textView255"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:gravity="center"
+                                    android:lineSpacingExtra="4dp"
+                                    android:text="Red Bucket"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/textView256"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="-5dp"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:gravity="center"
+                                    android:lineSpacingExtra="2dp"
+                                    android:text="Comming Up"
+                                    android:textColor="@color/third"
+                                    android:textSize="18sp" />
+
+                                <Button
+                                    android:id="@+id/Rent257"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:width="120dp"
+                                    android:backgroundTint="@color/black"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="Rent"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/widgetmain1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:id="@+id/imageView258"
+                                    android:layout_width="150dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginTop="0dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/bucketthree" />
+
+                                <TextView
+                                    android:id="@+id/textView259"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:gravity="center"
+                                    android:lineSpacingExtra="4dp"
+                                    android:text="Shopper White"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/textView260"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="-5dp"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:gravity="center"
+                                    android:lineSpacingExtra="2dp"
+                                    android:text="Comming Up"
+                                    android:textColor="@color/third"
+                                    android:textSize="18sp" />
+
+                                <Button
+                                    android:id="@+id/button261"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:width="120dp"
+                                    android:backgroundTint="@color/black"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="Rent"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginRight="32dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/widgetmain1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:id="@+id/imageView262"
+                                    android:layout_width="150dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginTop="0dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/bucketfour" />
+
+                                <TextView
+                                    android:id="@+id/textView263"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:gravity="center"
+                                    android:lineSpacingExtra="4dp"
+                                    android:text="Shopper Black"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/textView264"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="-5dp"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:gravity="center"
+                                    android:lineSpacingExtra="2dp"
+                                    android:text="Comming Up"
+                                    android:textColor="@color/third"
+                                    android:textSize="18sp" />
+
+                                <Button
+                                    android:id="@+id/Rent265"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:width="120dp"
+                                    android:backgroundTint="@color/black"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="Rent"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

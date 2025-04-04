@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFormFragment"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="769dp"
+            android:layout_height="1194dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="-30dp"
+            android:src="@drawable/man2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:alpha="0.2"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="200dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView62"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ashwidget" />
+
+                    <ImageView
+                        android:id="@+id/imageprofile"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="-185dp"
+                        android:src="@drawable/propic" />
+
+                    <TextView
+                        android:id="@+id/textView63"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="160dp"
+                        android:layout_marginTop="-50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonw" />
+
+
+                    <ImageButton
+                        android:id="@+id/editImage"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginTop="-45dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/editpen" />
+
+
+                    <TextView
+                        android:id="@+id/textView65"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="240dp"
+                        android:layout_marginTop="-170dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_black"
+                        android:text="Edit Your\nProfile"
+                        android:textColor="@color/black"
+                        android:textSize="40dp" />
+
+
+                    <TextView
+                        android:id="@+id/rname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="240dp"
+                        android:layout_marginTop="-10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="User Name\nSadeesh Aloka"
+                        android:textSize="20sp"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/ashwidget"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:paddingBottom="50dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView70"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Give Valid Details"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="140dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/second"
+                        android:textSize="10sp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textView71"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="First Name*"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"/>
+
+                    <EditText
+                        android:id="@+id/firstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:hint="Enter your name here"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"/>
+
+                    <TextView
+                        android:id="@+id/textView72"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Second Name*"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/secondname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:ems="10"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Enter your name here"
+                        android:inputType="text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView84"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="NIC*"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/nic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:ems="10"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Enter your NIC number"
+                        android:inputType="text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView87"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Phone Number*"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/phonenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:ems="10"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Enter your phone number"
+                        android:inputType="phone"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView88"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Email*"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:ems="10"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Enter your email here"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView91"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Gender*"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="80dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Male"
+                            android:textColor="@color/white" />
+
+                        <RadioButton
+                            android:id="@+id/female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="230dp"
+                            android:layout_marginTop="-48dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Female"
+                            android:textColor="@color/white" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/textView92"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Date of Birth*"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/bday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:ems="10"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="DD/MM/YYYY"
+                        android:inputType="none"
+                        android:focusable="false"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView95"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Choose Role*"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:ems="10"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_bold"
+
+                        android:entries="@array/rolespinner"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Username*"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:ems="10"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Enter your username"
+                        android:inputType="text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView69"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Enter Password*"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:ems="10"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Enter your password"
+                        android:inputType="text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView96"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Confirm Password*"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/confirmpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:ems="10"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Confirm your password"
+                        android:inputType="text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="15dp"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_extralight"
+                        android:textColor="@color/white"
+                        android:text="Here by I confirm all details are true" />
+
+                    <TextView
+                        android:id="@+id/btregister"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="24dp"
+                        android:width="150dp"
+                        android:height="30dp"
+                        android:background="@drawable/buttonblack"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="@+id/textView39"
+                        app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+                    <TextView
+                        android:id="@+id/circle3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="-51dp"
+                        android:layout_marginLeft="250dp"
+                        android:background="@drawable/buttonblack"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                         />
+
+                    <ImageView
+                        android:id="@+id/imageView31"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/donelogo"
+                        android:layout_marginTop="-48dp"
+                        android:layout_marginLeft="253dp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
