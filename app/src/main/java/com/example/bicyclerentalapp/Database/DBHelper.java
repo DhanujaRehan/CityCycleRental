@@ -1,4 +1,4 @@
-package com.example.bicyclerentalapp;
+package com.example.bicyclerentalapp.Database;
 
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
@@ -8,7 +8,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import com.example.bicyclerentalapp.adapters.Rental;
+import com.example.bicyclerentalapp.Methods.User;
+import com.example.bicyclerentalapp.Adapters.Rental;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,26 +18,26 @@ public class DBHelper extends SQLiteOpenHelper {
 
 
     public static final String COL_COMFIRMPASSWORD = "Confirmed_Password";
-    private static final String DATABASE_NAME = "PaddleGo.db";
-    private static final int DATABASE_VERSION = 4;
-    static final String TABLE_USERS = "User";
-    private static final String COL_ID = "id";
-    static final String COL_FIRSTNAME = "First_Name";
-    static final String COL_SECONDNAME = "Second_Name";
-    static final String COL_NIC = "NIC";
-    static final String COL_PHONENUMBER = "Phone_Number";
-    static final String COL_EMAIL = "Email";
+    public static final String TABLE_USERS = "User";
+    public static final String COL_EMAIL = "Email";
+    public static final String DATABASE_NAME = "PaddleGo.db";
+    public static final int DATABASE_VERSION = 4;
+    public static final String COL_ID = "id";
+    public static final String COL_FIRSTNAME = "First_Name";
+    public static final String COL_SECONDNAME = "Second_Name";
+    public static final String COL_NIC = "NIC";
+    public static final String COL_PHONENUMBER = "Phone_Number";
     public static final String COL_GENDER = "Gender" ;
     public static final String COL_BDAY = "Date_of_Birth";
     public static final String COL_ROLE = "Role";
     public static final String COL_USERNAME = "Username";
     public static final String COL_PASSWORD = "Password";
-    static final String COL_IMAGE = "Image";
+    public static final String COL_IMAGE = "Image";
     public static final String TABLE_RENTALS = "Rents";
     public static final String COL_BIKE = "Bike";
     public static final String COL_TIME = "Time";
     public static final String COL_PRICE = "Price";
-    private static final String COLUMN_IMAGE = "Image";
+    public static final String COLUMN_IMAGE = "Image";
 
 
     public DBHelper(Context context) {

@@ -1,4 +1,4 @@
-package com.example.bicyclerentalapp;
+package com.example.bicyclerentalapp.Main_Fragments;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
@@ -9,7 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.bicyclerentalapp.adapters.Rental;
+import com.example.bicyclerentalapp.Database.DBHelper;
+import com.example.bicyclerentalapp.R;
+import com.example.bicyclerentalapp.Adapters.CartAdapter;
+import com.example.bicyclerentalapp.Adapters.Rental;
 
 import java.util.List;
 

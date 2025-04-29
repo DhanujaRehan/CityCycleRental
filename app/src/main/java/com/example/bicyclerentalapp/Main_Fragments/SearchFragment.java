@@ -1,4 +1,4 @@
-package com.example.bicyclerentalapp;
+package com.example.bicyclerentalapp.Main_Fragments;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
@@ -11,8 +11,10 @@ import android.view.ViewGroup;
 import android.widget.SearchView;
 import android.widget.TextView;
 
-import com.example.bicyclerentalapp.adapters.Adapter;
-import com.example.bicyclerentalapp.adapters.Bicycle;
+import com.example.bicyclerentalapp.R;
+import com.example.bicyclerentalapp.Other_Fragments.ShopFragment;
+import com.example.bicyclerentalapp.Adapters.Adapter;
+import com.example.bicyclerentalapp.Adapters.Bicycle;
 
 import java.util.ArrayList;
 import java.util.List;

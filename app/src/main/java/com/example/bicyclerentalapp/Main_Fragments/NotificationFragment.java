@@ -1,6 +1,5 @@
-package com.example.bicyclerentalapp;
+package com.example.bicyclerentalapp.Main_Fragments;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.example.bicyclerentalapp.Other_Fragments.Notification2Fragment;
+import com.example.bicyclerentalapp.R;
 
 /**
  * A simple {@link Fragment} subclass.

@@ -1,4 +1,4 @@
-package com.example.bicyclerentalapp;
+package com.example.bicyclerentalapp.Methods;
 
 public class User {
     private String firstName;

@@ -6,12 +6,12 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Notification2">
+    tools:context=".Other_Fragments.Notification2">
 
   <FrameLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      tools:context=".Notification2Fragment">
+      tools:context=".Other_Fragments.Notification2Fragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

@@ -1,4 +1,4 @@
-package com.example.bicyclerentalapp;
+package com.example.bicyclerentalapp.Activities;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
@@ -13,6 +13,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+
+import com.example.bicyclerentalapp.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

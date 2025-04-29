@@ -1,4 +1,4 @@
-package com.example.bicyclerentalapp;
+package com.example.bicyclerentalapp.Other_Fragments;
 
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
@@ -30,6 +30,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.example.bicyclerentalapp.Database.DBHelper;
+import com.example.bicyclerentalapp.R;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

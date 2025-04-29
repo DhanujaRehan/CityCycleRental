@@ -1,12 +1,17 @@
-package com.example.bicyclerentalapp;
+package com.example.bicyclerentalapp.Methods;
 
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.fragment.app.Fragment;
 
+import com.example.bicyclerentalapp.Main_Fragments.CartFragment;
+import com.example.bicyclerentalapp.Main_Fragments.HomeFragment;
+import com.example.bicyclerentalapp.Main_Fragments.NotificationFragment;
+import com.example.bicyclerentalapp.Main_Fragments.SearchFragment;
+import com.example.bicyclerentalapp.Main_Fragments.pro2;
+import com.example.bicyclerentalapp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Home extends AppCompatActivity {

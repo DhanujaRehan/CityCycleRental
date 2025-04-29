@@ -13,28 +13,25 @@
         android:theme="@style/Theme.BicycleRentalApp"
         tools:targetApi="31">
         <activity
-            android:name=".test1"
+            android:name=".Other_Fragments.Notification2"
             android:exported="false" />
         <activity
-            android:name=".Notification2"
+            android:name=".Activities.Signup_Screen"
             android:exported="false" />
         <activity
-            android:name=".Signup_Screen"
+            android:name=".Activities.Login_Screen"
             android:exported="false" />
         <activity
-            android:name=".Login_Screen"
+            android:name=".Activities.Welcome_Sinup"
             android:exported="false" />
         <activity
-            android:name=".Welcome_Sinup"
+            android:name=".Methods.Home"
             android:exported="false" />
         <activity
-            android:name=".Home"
+            android:name=".Activities.Welcome_Login"
             android:exported="false" />
         <activity
-            android:name=".Welcome_Login"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".Activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

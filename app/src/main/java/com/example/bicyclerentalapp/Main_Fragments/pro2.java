@@ -1,4 +1,4 @@
-package com.example.bicyclerentalapp;
+package com.example.bicyclerentalapp.Main_Fragments;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,6 +15,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.bicyclerentalapp.Database.DBHelper;
+import com.example.bicyclerentalapp.Activities.Login_Screen;
+import com.example.bicyclerentalapp.R;
+import com.example.bicyclerentalapp.Other_Fragments.RegisterFormFragment;
+import com.example.bicyclerentalapp.Methods.User;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 public class pro2 extends Fragment {

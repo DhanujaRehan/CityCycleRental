@@ -5,7 +5,7 @@
     android:id="@+id/welcomelogin"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Welcome_Login"
+    tools:context=".Activities.Welcome_Login"
     android:background="@color/black">
 
     <ImageView

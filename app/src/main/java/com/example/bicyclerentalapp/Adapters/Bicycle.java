@@ -1,4 +1,4 @@
-package com.example.bicyclerentalapp.adapters;
+package com.example.bicyclerentalapp.Adapters;
 
 public class Bicycle {
 

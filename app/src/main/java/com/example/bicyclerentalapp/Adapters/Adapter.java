@@ -1,4 +1,4 @@
-package com.example.bicyclerentalapp.adapters;
+package com.example.bicyclerentalapp.Adapters;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -15,7 +15,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.bicyclerentalapp.DBHelper;
+import com.example.bicyclerentalapp.Database.DBHelper;
 import com.example.bicyclerentalapp.R;
 
 import java.io.ByteArrayOutputStream;
