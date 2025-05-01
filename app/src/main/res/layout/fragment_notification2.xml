@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Other_Fragments.Notification2Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp">
+
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="126dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="160dp"
+            android:src="@drawable/blacklogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="85dp"
+            android:fontFamily="@font/gilbert"
+            android:text="PaddleGo"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="128dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Notifications"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Communities"
+            android:textColor="@color/third"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dd" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Messages"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/notification"
+            app:layout_constraintTop_toBottomOf="@+id/dd" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="87dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="280dp"
+            android:background="@drawable/bottombar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notification" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/textView23"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="1000dp">
+
+                <TextView
+                    android:id="@+id/textView57"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="32dp"
+                    android:width="380dp"
+                    android:background="@drawable/lightashwidget"
+                    android:fontFamily="@font/poppins_regular"
+                    android:padding="10dp"
+                    android:height="75dp"
+                    android:text="Make sure that for the damages done by you have
+to be paid when the bicycle returns"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView55"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/lightashwidget"
+                    android:width="380dp"
+                    android:height="75dp"
+                    android:layout_marginRight="32dp"
+                    android:text="You have successfully loged in to the app."
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    android:padding="10dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="15dp" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

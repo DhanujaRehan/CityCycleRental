@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/PaddleGo"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BicycleRentalApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".Other_Fragments.Notification2"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Signup_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Login_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Welcome_Sinup"
+            android:exported="false" />
+        <activity
+            android:name=".Methods.Home"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Welcome_Login"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

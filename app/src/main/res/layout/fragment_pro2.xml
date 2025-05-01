@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main_Fragments.pro2"
+    android:background="@color/main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="471dp"
+            android:layout_height="1000dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="-2dp"
+            android:src="@drawable/backlg"
+            android:alpha="0.4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="200dp">
+
+
+                <Button
+                    android:id="@+id/logout"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginStart="332dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Logout"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="184dp"
+                    android:layout_height="174dp"
+                    android:layout_marginStart="132dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/whitewidget"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/firstname1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Sadeesh"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView36"
+                    app:layout_constraintTop_toBottomOf="@+id/propic" />
+
+                <ImageView
+                    android:id="@+id/propic"
+                    android:layout_width="111dp"
+                    android:layout_height="108dp"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="1dp"
+                    android:src="@drawable/propic"
+                    app:layout_constraintStart_toStartOf="@+id/textView36"
+                    app:layout_constraintTop_toTopOf="@+id/textView36" />
+
+                <TextView
+                    android:id="@+id/secondname1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="-10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Aloka"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView36"
+                    app:layout_constraintTop_toBottomOf="@+id/firstname1" />
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="380dp"
+                    android:layout_height="251dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="@drawable/blackwidget"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.444"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+                <TextView
+                    android:id="@+id/circle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="80dp"
+                    android:width="30dp"
+                    android:height="30dp"
+                    android:background="@drawable/buttonw"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView39"
+                    app:layout_constraintHorizontal_bias="0.142"
+                    app:layout_constraintStart_toEndOf="@+id/editprofile"
+                    app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/edit"
+                    app:layout_constraintStart_toStartOf="@+id/circle2"
+                    app:layout_constraintTop_toTopOf="@+id/circle2" />
+
+                <TextView
+                    android:id="@+id/editprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="96dp"
+                    android:layout_marginTop="24dp"
+                    android:width="150dp"
+                    android:height="30dp"
+                    android:background="@drawable/buttonw"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:text="Edit Profile"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView39"
+                    app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Personal Details"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView39"
+                    app:layout_constraintTop_toTopOf="@+id/textView39" />
+
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="212dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/profile"
+                    app:layout_constraintEnd_toEndOf="@+id/textView39"
+                    app:layout_constraintStart_toEndOf="@+id/textView43"
+                    app:layout_constraintTop_toTopOf="@+id/textView39" />
+
+                <TextView
+                    android:id="@+id/firstname2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_black"
+                    android:text="Sadeesh Aloka"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView39"
+                    app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Contact Number : +94 71 315 2719
+\nEmail : sadeesh@gmail.com
+\nNIC No : 200324211199"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView39"
+                    app:layout_constraintTop_toBottomOf="@+id/firstname2" />
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="329dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/lightashwidget"
+                    app:layout_constraintEnd_toEndOf="@+id/textView39"
+                    app:layout_constraintStart_toStartOf="@+id/textView39"
+                    app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="422dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView39">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="420dp"
+                        android:layout_marginLeft="0dp"
+                        android:orientation="horizontal"
+
+                        >
+
+
+                        <TextView
+                            android:id="@+id/textView51"
+                            android:layout_width="400dp"
+                            android:layout_height="400dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/whitewidget" />
+
+                        <TextView
+                            android:id="@+id/textView61"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Rented Bicycles"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="@color/black"
+                            android:textSize="27sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="-300dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/imageView25"
+                            android:layout_width="200dp"
+                            android:scaleType="centerCrop"
+                            android:layout_height="300dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="-320dp"
+                            android:src="@drawable/orangehalf" />
+
+                        <TextView
+                            android:id="@+id/textView58"
+                            android:layout_width="190dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="55dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ashwidget" />
+
+                        <TextView
+                            android:id="@+id/textView59"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-180dp"
+                            android:layout_marginTop="80dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+                            android:text="Rented Date : 05/05/2025 \nReturn Date : 10/05/2025"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/textView44"
+                            android:layout_width="190dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="-180dp"
+                            android:layout_marginTop="170dp"
+                            android:background="@drawable/bbwidget" />
+
+                        <TextView
+                            android:id="@+id/textView50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-150dp"
+                            android:layout_marginTop="190dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+                            android:text="Paddled Distance"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-100dp"
+                            android:layout_marginTop="230dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+                            android:text="4.6KM"
+                            android:textColor="@color/white"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView48"
+                            android:layout_width="190dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="-150dp"
+                            android:layout_marginTop="286dp"
+                            android:background="@drawable/blackwidget" />
+
+                        <TextView
+                            android:id="@+id/textView60"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+                            android:text="Total Cost"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                           android:layout_marginTop="305dp"
+                            android:layout_marginLeft="-130dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+                            android:text="1000LKR"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"
+                            android:layout_marginTop="350dp"
+                            android:layout_marginLeft="-95dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/OOOO"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Orange Crush"
+                            android:textColor="@color/third"
+                            android:fontFamily="@font/poppins_black"
+                            android:textSize="20sp"
+                            android:layout_marginTop="320dp"
+                            android:layout_marginLeft="-330dp"/>
+
+                        <TextView
+                            android:id="@+id/textView73"
+                            android:layout_width="400dp"
+                            android:layout_height="400dp"
+                            android:layout_marginStart="250dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whitewidget" />
+
+                        <TextView
+                            android:id="@+id/textView74"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-300dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Rented Bicycles"
+                            android:textColor="@color/black"
+                            android:textSize="27sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView27"
+                            android:layout_width="200dp"
+                            android:layout_height="300dp"
+                            android:layout_marginLeft="-320dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/greenhalf" />
+
+                        <TextView
+                            android:id="@+id/textView75"
+                            android:layout_width="190dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="55dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ashwidget" />
+
+                        <TextView
+                            android:id="@+id/textView76"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-180dp"
+                            android:layout_marginTop="80dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+                            android:text="Rented Date : 10/06/2025 \nReturn Date : 18/06/2025"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/textView77"
+                            android:layout_width="190dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="-178dp"
+                            android:layout_marginTop="170dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bbwidget" />
+
+                        <TextView
+                            android:id="@+id/textView78"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-150dp"
+                            android:layout_marginTop="190dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+                            android:text="Paddled Distance"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/textView79"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-100dp"
+                            android:layout_marginTop="230dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+                            android:text="8.2KM"
+                            android:textColor="@color/white"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView80"
+                            android:layout_width="190dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="-150dp"
+                            android:layout_marginTop="286dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/blackwidget" />
+
+                        <TextView
+                            android:id="@+id/textView81"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-130dp"
+                            android:layout_marginTop="305dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+                            android:text="Total Cost"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/textView82"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-95dp"
+                            android:layout_marginTop="350dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+                            android:text="1600LKR"
+                            android:textColor="@color/white"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView83"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-330dp"
+                            android:layout_marginTop="320dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_black"
+                            android:text="Green Queen"
+                            android:textColor="@color/third"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main_Fragments.NotificationFragment"
+    android:background="@color/white">
+
+    <!-- Header Layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="126dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="160dp"
+            android:src="@drawable/blacklogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="85dp"
+            android:fontFamily="@font/gilbert"
+            android:text="PaddleGo"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="128dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Notifications"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Communities"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Messages"
+            android:textColor="@color/third"
+            app:layout_constraintStart_toEndOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="97dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="28dp"
+            android:background="@drawable/bottombar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="220dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="386dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/blackwidget"
+                android:gravity=""
+                android:paddingLeft="10dp"
+                android:text="Make the confutable \nLuxuriou \nFast \nHealthy"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="180dp"
+                android:layout_height="134dp"
+                android:layout_marginTop="-138dp"
+                android:layout_marginLeft="230dp"
+                android:background="@drawable/racerq"
+                android:src="@drawable/widget"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView24" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="190dp"
+                android:layout_height="188dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/blackwidget"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="126dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="-130dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/yasas"
+                app:layout_constraintBottom_toBottomOf="@+id/textView25"
+                app:layout_constraintStart_toStartOf="@+id/textView25" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="120dp"
+                android:layout_height="87dp"
+                android:layout_marginTop="-180dp"
+                android:layout_marginLeft="110dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="World \nchampion \nYasas"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView25"
+                app:layout_constraintTop_toTopOf="@+id/textView25" />
+
+            <TextView
+
+                android:layout_width="190dp"
+                android:layout_height="188dp"
+                android:layout_marginLeft="228dp"
+                android:layout_marginTop="-94dp"
+                android:id="@+id/textView26"
+                android:background="@drawable/blackwidget"
+                android:fontFamily="@font/poppins_black"
+                android:paddingLeft="10dp"
+                android:text="Sun \nDay \n10% \nOffer"
+                android:textColor="@color/red"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="251dp"
+                android:layout_marginTop="-202dp"
+                android:src="@drawable/noti1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="386dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/yellowbric"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="200dp"
+                android:layout_marginLeft="40dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="-150dp"
+                android:src="@drawable/mix"
+                app:layout_constraintStart_toStartOf="@+id/textView18"
+                app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-153dp"
+                android:layout_marginLeft="260dp"
+                android:fontFamily="@font/poppins_black"
+                android:text="Latest \nArrivals \n2025"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView9"
+                app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="386dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bluebrick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="1300dp"
+                android:layout_height="148dp"
+                android:layout_marginLeft="-370dp"
+                android:layout_marginTop="-150dp"
+                android:alpha="0.5"
+                android:src="@drawable/mountain"
+                app:layout_constraintBottom_toBottomOf="@+id/textView32"
+                app:layout_constraintStart_toStartOf="@+id/textView32" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="-150dp"
+                android:layout_marginLeft="-268dp"
+                android:src="@drawable/race"
+                app:layout_constraintStart_toStartOf="@+id/textView32"
+                app:layout_constraintTop_toTopOf="@+id/textView32" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="-140dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="Inter Country \nCycle Championship 2025"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/imageView17"
+                app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="170dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="Visit Redbull adventure for \nmore details"
+                android:textColor="@color/lightblue"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView32"
+                app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="386dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/ashwidget"
+                android:paddingLeft="10dp"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="180dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="-150dp"
+                android:clipChildren="true"
+                android:clipToPadding="true"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:layout_constraintStart_toStartOf="@+id/textView28"
+                app:layout_constraintTop_toTopOf="@+id/textView28">
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="250dp"
+                    android:layout_height="160dp"
+                    android:layout_marginStart="0dp"
+                    android:background="@drawable/transparentwidget"
+                    android:scaleType="centerCrop"
+
+                    android:src="@drawable/noti2"
+                    app:layout_constraintStart_toStartOf="@+id/textView28"
+                    app:layout_constraintTop_toTopOf="@+id/textView28" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="-150dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="Go Green \nWorld Bicycle \nRiding Festival \n2025 \nstarts 10th February"
+                android:textColor="@color/green"
+                android:textSize="17sp"
+                app:layout_constraintStart_toEndOf="@+id/cardView"
+                app:layout_constraintTop_toTopOf="@+id/textView28" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
